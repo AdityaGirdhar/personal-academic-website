@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.main-content {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centers the content */
+    padding-top: 80px; /* Adjusts for the fixed header height */
+    gap: 2em; /* Adds space between the profile and research containers */
+}
+
+header {
+    width: 100%;
+    background-color: #7c7c7c;
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    /* margin: 2em auto; */
+    gap: 2em;
+    flex:1;
+    padding-top: 80px;
+    justify-content: center;
+}
+
+.profile {
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-left: 20px;
+    height:500px;
+    
+}
+
+.research {
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 70%;
+    overflow: auto;
+    margin-right: 30px;
+}
+
+.profile img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px; 
+    display: block;
+    margin:auto;
+    margin-bottom: 0;
+}
+.para1{
+    margin-top:50px;
+}
+
+.profile h2 {
+    margin-bottom: 7.5px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contact-buttons {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    color: white;
+    background-color: #7c7c7c;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.college-info {
+    text-align: center;
+}
+
+.research h2 {
+    border-bottom: 2px solid #7c7c7c;
+}
+
+.research h3 {
+    color: #7c7c7c;
+    margin: 0 0 0 0;
+    font-size: 24px;
+}
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.plazza{
+    bottom: 0;
+    margin-top: 300px;
+}
+
+.students {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.students th,
+.students td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.students th {
+    background-color: #f2f2f2;
+}
